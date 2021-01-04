@@ -1,7 +1,6 @@
 AFRAME.registerComponent("tour", {
   init: function () {
-    this.placesContainer = this.el;
-    this.cameraEl = document.querySelector("#camera");
+    this.placesContainer = this.el;    
     this.createCards();
   },
 
