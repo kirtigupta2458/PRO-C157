@@ -1,6 +1,6 @@
 AFRAME.registerComponent("tour", {
   init: function () {
-    this.placesContainer = this.el;    
+    this.placesContainer = this.el;   
     this.createCards();
   },
 
@@ -28,6 +28,7 @@ AFRAME.registerComponent("tour", {
         url: "./assets/thumbnails/new_york_city.png",
       },
     ];
+    
     let prevoiusXPosition = -60;
 
     for (var item of thumbNailsRef) {
@@ -40,7 +41,7 @@ AFRAME.registerComponent("tour", {
       // Border Element
       const borderEl = this.createBorder(position, item.id);
 
-      // Thubnail Element
+      // Thumbnail Element
       const thumbNail = this.createThumbNail(item);
       borderEl.appendChild(thumbNail);
 
